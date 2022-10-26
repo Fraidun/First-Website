@@ -1,0 +1,249 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-image: linear-gradient(to right, #c5caa8 0%, #41445d 100%);
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0;
+  width: 100%;
+}
+#logo_main {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+#search {
+  margin-right: 10px;
+  padding-left: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  border-style: none;
+  border: 1px white solid;
+}
+
+.personal_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.1);
+  width: 500px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#img_name img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 1px white solid;
+}
+
+#info {
+  list-style: none;
+  line-height: 50px;
+}
+ul {
+  list-style: none;
+}
+.main_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  transition: all 0.5s;
+}
+#menuButton {
+  width: 28px;
+  height: 28px;
+  z-index: 100;
+}
+.main_button:hover {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  transform: rotate(500deg);
+}
+.navigation:active .navBars {
+  display: flex;
+}
+/* .navBars:active .main_button {
+  display: none;
+} */
+
+.navigation {
+  display: inline-block;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  border-radius: 40px;
+  width: fit-content;
+}
+.navBars {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(116, 235, 213, 0.4) 0%,
+    rgb(159, 172, 230, 0.4) 100%
+  );
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-radius: 0 97.8% 0 0;
+  clip-path: circle(97.8% at 2% 98%);
+  flex-direction: column;
+  cursor: pointer;
+  z-index: -4;
+}
+
+div .bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+.barP {
+  display: none;
+  position: fixed;
+  bottom: 215px;
+  left: 72px;
+  background-image: linear-gradient(to right, #9face6 0%, #74ebd5 100%);
+  border-radius: 5px;
+  border: 1px white solid;
+  z-index: 0;
+}
+.barH {
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  left: 148px;
+  border-radius: 5px;
+  border: 1px white solid;
+  background-image: linear-gradient(to right, #9face6 0%, #74ebd5 100%);
+  z-index: 0;
+}
+.barPro {
+  display: none;
+  position: fixed;
+  bottom: 122px;
+  left: 205px;
+  border-radius: 5px;
+  border: 1px white solid;
+  background-image: linear-gradient(to right, #9face6 0%, #74ebd5 100%);
+  z-index: 0;
+}
+.barL {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  left: 238px;
+  border-radius: 5px;
+  border: 1px white solid;
+  background-image: linear-gradient(to right, #9face6 0%, #74ebd5 100%);
+  z-index: 0;
+}
+.bar {
+  color: black;
+  display: flex;
+}
+
+#bar1 {
+  position: fixed;
+  bottom: 200px;
+  left: 35px;
+  z-index: 0;
+  flex-direction: row;
+  transition: all 0.5s;
+}
+#bar1:hover {
+  transform: scale(1.2);
+}
+#bar2 {
+  flex-direction: row;
+  position: fixed;
+  bottom: 165px;
+  left: 112px;
+  transition: all 0.5s;
+}
+#bar2:hover {
+  transform: scale(1.2);
+}
+#bar3 {
+  flex-direction: row;
+  position: fixed;
+  bottom: 105px;
+  left: 170px;
+  transition: all 0.5s;
+}
+#bar3:hover {
+  transform: scale(1.2);
+}
+#bar4 {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 25px;
+  left: 200px;
+  transition: all 0.5s;
+}
+#bar4:hover {
+  transform: scale(1.2);
+}
+.bar {
+  height: 24px;
+  width: 24px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.3);
+  padding: 0;
+  border-radius: 20px;
+  border: 1px white solid;
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-size: px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+}
+@media only screen and (max-height: 600px) and (max-width: 3000px) {
+  #search {
+    width: 150px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
